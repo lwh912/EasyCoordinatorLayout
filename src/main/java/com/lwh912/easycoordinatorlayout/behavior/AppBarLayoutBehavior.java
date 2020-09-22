@@ -22,6 +22,7 @@ import com.google.android.material.appbar.AppBarLayout;
 
 import java.lang.reflect.Field;
 
+
 @SuppressLint("LongLogTag")
 public class AppBarLayoutBehavior extends AppBarLayout.Behavior {
 

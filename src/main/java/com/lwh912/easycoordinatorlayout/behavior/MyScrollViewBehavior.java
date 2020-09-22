@@ -14,6 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.appbar.AppBarLayout;
 
+
 public class MyScrollViewBehavior extends AppBarLayout.ScrollingViewBehavior {
 
     public MyScrollViewBehavior(Context context, AttributeSet attrs) {
