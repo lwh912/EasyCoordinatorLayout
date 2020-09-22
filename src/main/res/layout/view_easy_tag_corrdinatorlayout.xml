@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lwh912.easycoordinatorlayout.view.XmCoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            app:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:layout_behavior="com.lwh912.easycoordinatorlayout.behavior.AppBarLayoutBehavior"
+            >
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:id="@+id/holderView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#00000000"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_appbar_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="50dp"
+                            >
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.lwh912.easycoordinatorlayout.view.NoScrollViewpager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            app:layout_behavior="com.lwh912.easycoordinatorlayout.behavior.MyScrollViewBehavior" />
+
+
+    </com.lwh912.easycoordinatorlayout.view.XmCoordinatorLayout>
+
+
+</RelativeLayout>
