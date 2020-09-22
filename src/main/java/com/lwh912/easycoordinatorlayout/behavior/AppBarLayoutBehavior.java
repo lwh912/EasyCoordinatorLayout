@@ -22,15 +22,6 @@ import com.google.android.material.appbar.AppBarLayout;
 
 import java.lang.reflect.Field;
 
-/**
- * 解决appbarLayout若干问题：
- * （1）快速滑动appbarLayout会出现回弹
- * （2）快速滑动appbarLayout到折叠状态下，立马下滑，会出现抖动的问题
- * （3）滑动appbarLayout，无法通过手指按下让其停止滑动
- *
- * @author yuruiyin
- * @version 2018/1/3
- */
 @SuppressLint("LongLogTag")
 public class AppBarLayoutBehavior extends AppBarLayout.Behavior {
 
